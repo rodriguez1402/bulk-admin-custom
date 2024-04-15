@@ -67,7 +67,7 @@ class BulkModelAdmin(admin.ModelAdmin):
         ]
 
     def get_urls(self):
-        from django.conf.urls import url
+        from django.urls import url
 
         def wrap(view):
             def wrapper(*args, **kwargs):
